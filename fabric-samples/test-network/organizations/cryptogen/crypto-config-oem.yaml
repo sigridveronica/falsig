@@ -1,0 +1,36 @@
+# Copyright IBM Corp. All Rights Reserved.
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+# ---------------------------------------------------------------------------
+# "PeerOrgs" - Definition of organizations managing peer nodes
+# ---------------------------------------------------------------------------
+PeerOrgs:
+  # ---------------------------------------------------------------------------
+  # OEM
+  # ---------------------------------------------------------------------------
+  - Name: OEM
+    Domain: oem.example.com
+    EnableNodeOUs: true
+    # ---------------------------------------------------------------------------
+    # "Specs"
+    # ---------------------------------------------------------------------------
+    # Explicit definition of hosts in your configuration.
+    Specs:
+      - Hostname: QA1.1
+      - Hostname: QA1.2
+      - Hostname: SW1.1
+      - Hostname: SW1.2
+      - Hostname: SW1.3
+    # ---------------------------------------------------------------------------
+    # "Template"
+    # ---------------------------------------------------------------------------
+    # The Template section is not needed in this case since we are explicitly
+    # defining each peer node under Specs.
+    # ---------------------------------------------------------------------------
+    # "Users"
+    # ---------------------------------------------------------------------------
+    # Count: The number of user accounts _in addition_ to Admin
+    Users:
+      Count: 1

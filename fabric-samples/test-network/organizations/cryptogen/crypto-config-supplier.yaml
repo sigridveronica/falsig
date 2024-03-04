@@ -1,0 +1,16 @@
+# ---------------------------------------------------------------------------
+# "PeerOrgs" - Definition of organizations managing peer nodes for Supplier
+# ---------------------------------------------------------------------------
+PeerOrgs:
+  # ---------------------------------------------------------------------------
+  # Supplier
+  # ---------------------------------------------------------------------------
+  - Name: Supplier
+    Domain: supplier.example.com
+    EnableNodeOUs: true
+    # Specs for defining explicit peers
+    Specs:
+      - Hostname: QA2.1
+    # Users
+    Users:
+      Count: 1

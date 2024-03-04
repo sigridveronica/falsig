@@ -1,0 +1,49 @@
+# Copyright IBM Corp. All Rights Reserved.
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+
+version: '3.7'
+
+services:
+  # OEM Peers
+  QA1.1.oem.example.com:
+    volumes:
+      - ./podman/peercfg:/etc/hyperledger/peercfg
+
+  QA1.2.oem.example.com:
+    volumes:
+      - ./podman/peercfg:/etc/hyperledger/peercfg
+  # SW Peers for OEM
+  SW1.1.oem.example.com:
+    volumes:
+      - ./podman/peercfg:/etc/hyperledger/peercfg
+
+  SW1.2.oem.example.com:
+    volumes:
+      - ./podman/peercfg:/etc/hyperledger/peercfg
+
+  SW1.3.oem.example.com:
+    volumes:
+      - ./podman/peercfg:/etc/hyperledger/peercfg
+
+  # Supplier Peers
+  QA2.1.supplier.example.com:
+    volumes:
+      - ./podman/peercfg:/etc/hyperledger/peercfg
+
+  # Assuming there's a QA2.2 for demonstration purposes
+  QA2.2.supplier.example.com:
+    volumes:
+      - ./podman/peercfg:/etc/hyperledger/peercfg
+
+  # Airline Peers
+  QA3.1.airline.example.com:
+    volumes:
+      - ./podman/peercfg:/etc/hyperledger/peercfg
+
+  cli:
+    volumes:
+      - ./podman/peercfg:/etc/hyperledger/peercfg
+
