@@ -57,3 +57,16 @@ cd /Users/sigridveronica/go/src/github.com/FAL/fabric-samples/test-network/compo
 docker-compose -f docker-compose-test-net.yaml down
 docker-compose -f docker-compose-test-net.yaml up -d
 ```
+
+
+
+##ADD
+```bash
+export FABRIC_CFG_PATH=$PWD/../config
+```
+```bash
+export FABRIC_CFG_PATH=$PWD/configtx
+```
+```bash
+export PATH=$PWD/../bin:$PATH
+```
