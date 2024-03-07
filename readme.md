@@ -25,7 +25,9 @@ tar -ztvf oemChaincode.tar.gz
 peer lifecycle chaincode install oemChaincode.tar.gz --path ./chaincode/oemContract/ --lang golang --label oemContract_1
 ./network.sh deployCC -ccn oemChaincode -ccp /chaincode/oemContract/ -ccl go
 ```
-
+```bash
+./network.sh createChannel -c oemchannel
+```
 
 ```bash
 Based on the provided Docker Compose configuration, here are the peer addresses for the new peers you've added:
